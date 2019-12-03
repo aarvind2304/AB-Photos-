@@ -246,15 +246,23 @@ main p {
 
 }
 
-.bubItem {
-   display: flex;
+.bubItem
+{
+   display:flex;
    justify-content: center;
    align-items: center;
-   width: 80%;
-   margin: 1em;
-   border-color: rgba(21, 6, 2, 0.08);
-   border-style: solid;
-   border-width: 2px;
+width:80%;
+margin:1em;
+border-color: rgba(21,6,2,0.08);
+border-style:solid;
+border-width: 2px;
+
+transition:0.5s;
+}
+
+.bubItem:hover
+{
+   box-shadow: 2.5px 2.5px 4px 2px rgba(41,42,43,0.2);
 }
 
 .slicknav_menu {
