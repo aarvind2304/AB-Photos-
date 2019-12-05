@@ -323,8 +323,21 @@ main p {
       width: 150% !important;
    }
 
-   .nav_item a {
+   .slicknav_menu {
+      background-color: rgba(21, 6, 2, 0.0008);
+   }
+
+   .nav_item {
+      border-bottom: 1px solid #aaa;
       width: 100%;
+      text-align: left;
+   }
+
+   .nav_item a {
+      font-family: coranto-2, serif;
+      width: 100%;
+      color: black !important;
+      font-size: 1rem;
    }
 
    .slideShow {
