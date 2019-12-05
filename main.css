@@ -327,6 +327,11 @@ main p {
       background-color: rgba(21, 6, 2, 0.0008);
    }
 
+   .slicknav_menutxt {
+      font-family: coranto-2, serif;
+
+   }
+
    .nav_item {
       border-bottom: 1px solid #aaa;
       width: 100%;
