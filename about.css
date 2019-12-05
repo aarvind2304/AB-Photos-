@@ -294,8 +294,11 @@ span {
 }
 
 .imgCont img {
-   max-height: 500px;
-   width: auto;
+   /* max-height: 500px;
+   width: auto; */
+
+   max-height: 700px;
+   max-width: 700px;
 }
 
 
@@ -353,17 +356,19 @@ span {
       font-size: 1rem;
    }
 
-   .slideShow {
-      display: grid;
-      grid-template-columns: [slideLeft]0.1fr [slideStart]0.8fr [slideEnd] 0.1fr [slideRight];
-      grid-row: row2Start/row2End;
-   }
+
 
    main {
       display: grid;
       grid-template-columns: [contLeft]0.1fr [contStart]0.8fr [contEnd] 0.1fr [contRight];
       grid-row: row3Start/row3End;
       text-align: left;
+   }
+
+   .slideShow {
+      display: grid;
+      grid-template-columns: [slideLeft]0.1fr [slideStart]0.8fr [slideEnd] 0.1fr [slideRight];
+      grid-row: row2Start/row2End;
    }
 
    .contentBubbleContainer {
