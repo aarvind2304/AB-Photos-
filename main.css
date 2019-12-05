@@ -356,10 +356,10 @@ main p {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: 3fr;
-      justify-content: center;
-      align-items: center;
+      gap:30px;
    }
    .rounded {
+      width:70%;
       margin: 0 auto 0 auto;
       align-self: center;
    }
