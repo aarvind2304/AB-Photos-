@@ -2,7 +2,8 @@
    box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
    margin: 0;
    padding: 0;
    width: 100%;
@@ -52,7 +53,6 @@ ul {
 }
 
 /*Nav*/
-
 /* 
 #mobilemenu {
    display: none;
@@ -102,6 +102,7 @@ ul {
 .nav a:hover {
    box-shadow: 0 0 0 1000px rgba(79, 155, 221, .59);
    background-color: rgba(79, 155, 221, .59);
+
 }
 
 /*content*/
@@ -109,6 +110,7 @@ ul {
 /*slideshow*/
 
 .slideShow {
+
    display: grid;
    grid-template-columns: [slideLeft]0.25fr [slideStart]0.75fr [slideEnd] 0.25fr [slideRight];
    grid-row: row2Start/row2End;
@@ -165,6 +167,7 @@ main {
    display: grid;
    grid-template-columns: [contLeft]0.2fr [contStart]0.6fr [contEnd] 0.2fr [contRight];
    grid-row: row3Start/row3End;
+
    text-align: left;
 }
 
@@ -173,8 +176,9 @@ main h1 {
    color: #404040;
    margin: 0 0 0.05em 0;
    grid-column: contStart/contEnd;
-   font-family: "lucida Calligraphy", serif;
+   font-family: coranto-2, serif;
    font-weight: 450;
+
 }
 
 main .prev {
@@ -206,6 +210,8 @@ main p {
    align-items: center;
 }
 
+
+
 .bubbleTopLeft {
    grid-column: bubble1Start/bubble1End;
    grid-row: start1/half;
@@ -220,6 +226,7 @@ main p {
    display: flex;
    justify-content: center;
    align-items: center;
+
 }
 
 .bubbleBottomLeft {
@@ -228,6 +235,7 @@ main p {
    display: flex;
    justify-content: center;
    align-items: center;
+
 }
 
 .bubbleBottomRight {
@@ -236,6 +244,7 @@ main p {
    display: flex;
    justify-content: center;
    align-items: center;
+
 }
 
 .bubItem {
@@ -247,12 +256,12 @@ main p {
    border-color: rgba(21, 6, 2, 0.08);
    border-style: solid;
    border-width: 2px;
+
    transition: 0.5s;
 }
 
 .bubItem:hover {
    box-shadow: 2.5px 2.5px 4px 2px rgba(41, 42, 43, 0.2);
-   border-color: rgba(21, 6, 2, 0.00);
 }
 
 .slicknav_menu {
@@ -263,79 +272,105 @@ main p {
    display: grid;
    grid-template-columns: [start1] .3fr [box1End] 0.3fr [box2End] 0.3fr [box3End];
    grid-template-rows: 1fr;
-   justify-content: space-around;
+   justify-content: center;
    align-items: center;
+}
+
+span {
+   line-height: 1.4rem;
 }
 
 .rounded {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding:0 20px;
+   padding: 20px;
    width: 100%;
    height: 100%;
-   border-color: rgba(21, 6, 2, 0.08);
-   border-style: solid;
-   border-width: 2px;
-   border-radius:20px;
 }
 
 .rounded img {
    width: 80%;
 }
 
+.imgCont img {
+   /* max-height: 500px;
+   width: auto; */
+
+   max-height: 700px;
+   max-width: 700px;
+}
+
+
 @media only screen and (max-width: 767px) {
+
    /* Hide the #nav_menu at 767 px */
    header {
       grid-template-columns: [logoStart navStart] 1fr [logoEnd navEnd];
       grid-template-rows: [row1]0.6fr[row1end]0.4fr[row2end];
    }
+
    .logoHolder {
       grid-row: row1/row1end;
    }
+
    .nav {
       display: none;
    }
+
    /* Display the slicknav version of the menu at 767px */
    .slicknav_menu {
       display: block;
       grid-row: row1end/row2end;
    }
+
    #mobilemenu {
       display: block;
       width: 100%;
+
    }
+
    #mobilemenu ul {
       width: 150% !important;
    }
+
    .slicknav_menu {
       background-color: rgba(21, 6, 2, 0.0008);
    }
+
    .slicknav_menutxt {
       font-family: coranto-2, serif;
+
    }
+
    .nav_item {
       border-bottom: 1px solid #aaa;
       width: 100%;
       text-align: left;
    }
+
    .nav_item a {
       font-family: coranto-2, serif;
       width: 100%;
       color: black !important;
       font-size: 1rem;
    }
-   .slideShow {
-      display: grid;
-      grid-template-columns: [slideLeft]0.1fr [slideStart]0.8fr [slideEnd] 0.1fr [slideRight];
-      grid-row: row2Start/row2End;
-   }
+
+
+
    main {
       display: grid;
       grid-template-columns: [contLeft]0.1fr [contStart]0.8fr [contEnd] 0.1fr [contRight];
       grid-row: row3Start/row3End;
       text-align: left;
    }
+
+   .slideShow {
+      display: grid;
+      grid-template-columns: [slideLeft]0.1fr [slideStart]0.8fr [slideEnd] 0.1fr [slideRight];
+      grid-row: row2Start/row2End;
+   }
+
    .contentBubbleContainer {
       display: grid;
       grid-template-columns: [bubbleLeft] 0fr [bubble1Start].4fr [bubble1End] 0.1fr [bubble2Start] 0.4fr [bubble2End] 0fr [bubbleRight];
@@ -343,6 +378,7 @@ main p {
       justify-content: center;
       align-items: center;
    }
+
    main p {
       grid-column: contStart/contEnd;
       margin: 0;
@@ -352,6 +388,7 @@ main p {
       font-style: normal;
       font-size: 1.5rem;
    }
+
    .contact {
       display: grid;
       grid-template-columns: auto;
@@ -359,8 +396,14 @@ main p {
       justify-content: center;
       align-items: center;
    }
+
    .rounded {
       margin: 0 auto 0 auto;
       align-self: center;
    }
+
+   span {
+      font-size: 80%;
+   }
+
 }
