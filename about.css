@@ -396,4 +396,9 @@ span {
       margin: 0 auto 0 auto;
       align-self: center;
    }
+
+   span {
+      font-size: 80%;
+   }
+
 }
