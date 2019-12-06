@@ -141,7 +141,7 @@ main .prev {
 main p {
    margin: 0;
    color: #404040;
-   font-family: coranto-2, serif;
+   font-family:"microsoft phagspa", serif;
    font-weight: 400;
    font-style: normal;
    text-align: center;
@@ -152,6 +152,8 @@ main b {
    text-align: Center;
    font-size: 2em;
    margin: 0 auto;
+   font-family: "coranto-2", serif;
+
 }
 
 .containerImg {

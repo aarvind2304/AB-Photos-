@@ -158,9 +158,17 @@ main p {
    grid-column: contStart/contEnd;
    margin: 0;
    color: #404040;
-   font-family: coranto-2, serif;
+   font-family: "microsoft phagspa", serif;
    font-weight: 400;
    font-style: normal;
+}
+
+main b {
+   font-family: "coranto-2", serif;
+   font-size:1.5em;
+   display:block;
+   text-align: center;
+   margin-bottom:0;
 }
 
 /* Contact Bubbles */
@@ -280,7 +288,7 @@ span {
       grid-column: contStart/contEnd;
       margin: 0;
       color: #404040;
-      font-family: "coranto-2", serif;
+      font-family: "microsoft phagspa", serif;
       font-weight: 400;
       font-style: normal;
       font-size: 1.5rem;

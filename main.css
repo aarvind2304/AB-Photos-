@@ -160,9 +160,14 @@ main p {
    grid-column: contStart/contEnd;
    margin: 0;
    color: #404040;
-   font-family: coranto-2, serif;
+   font-family: "microsoft phagspa", serif;
    font-weight: 400;
    font-style: normal;
+}
+
+.cherish
+{
+   text-align:center;
 }
 
 /* CONTENT BUBBLES */
