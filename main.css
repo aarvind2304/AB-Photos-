@@ -106,11 +106,11 @@ ul {
 
 /*content*/
 
-/*slideshow*/
+/*Title Picture*/
 
-.slideShow {
+.titlePicture {
    display: grid;
-   grid-template-columns: [slideLeft]0.25fr [slideStart]0.75fr [slideEnd] 0.25fr [slideRight];
+   grid-template-columns: [titleLeft]0.25fr [titleStart]0.75fr [titleEnd] 0.25fr [titleRight];
    grid-row: row2Start/row2End;
 }
 
@@ -119,45 +119,14 @@ ul {
    justify-content: center;
    align-items: center;
    align-self: center;
-   grid-column: slideStart/slideEnd;
+   grid-column: titleStart/titleEnd;
+   margin-top: 1em;
+   margin-bottom: 1em;
 }
 
 .imgCont img {
    width: 100%
 }
-
-/* test later
- .slideList
- {
-    list-style-type: none;
-    grid-column: slideStart/slideEnd;
-    width:500%;
-    position:relative;
- }
-
- .slideListItem
- {
-    width:20%;
-    float:left;
- }
-
- .slideShow ul {animation: slideshow2 15s infinite alternate;}
-
- @keyframes slideshow2
- {
-    0% {left:0%;}
-    10% {left:0%;}
-    20% {left:-100%;}
-    30% {left:-100%;}
-    40% {left:-200%;}
-    50% {left:-200%;}
-    60% {left:-300%;}
-    70% {left:-300%;}
-    80% {left:-400%;}
-    90% {left:-400%;}
-    100% {left:-400%;}
- }
- */
 
 /*main*/
 
@@ -278,13 +247,11 @@ main p {
    border-style: solid;
    border-width: 2px;
    border-radius: 20px;
-   margin-bottom:1em;   
+   margin-bottom: 1em;
 }
 
-.fb
-{
+.fb {
    transition: 0.5s;
-
 }
 
 .facebook {
@@ -343,11 +310,13 @@ main p {
       color: black !important;
       font-size: 1rem;
    }
-   .slideShow {
+   /*Title Picture*/
+   .titlePicture {
       display: grid;
-      grid-template-columns: [slideLeft]0.1fr [slideStart]0.8fr [slideEnd] 0.1fr [slideRight];
+      grid-template-columns: [titleLeft]0.1fr [titleStart]0.8fr [titleEnd] 0.1fr [titleRight];
       grid-row: row2Start/row2End;
    }
+   /*main*/
    main {
       display: grid;
       grid-template-columns: [contLeft]0.1fr [contStart]0.8fr [contEnd] 0.1fr [contRight];
@@ -370,6 +339,7 @@ main p {
       font-style: normal;
       font-size: 1.5rem;
    }
+   /* Contact Bubbles */
    .contact {
       display: grid;
       grid-template-columns: auto;
