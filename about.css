@@ -231,6 +231,11 @@ span {
    max-width: 700px;
 }
 
+nav .current {
+    background-color: rgba(79, 155, 221, .59);
+    box-shadow: 0 0 0 1000px rgba(79, 155, 221, .59);
+}
+
 @media only screen and (max-width: 767px) {
    /* Hide the #nav_menu at 767 px */
    header {
