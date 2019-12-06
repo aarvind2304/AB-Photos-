@@ -13,7 +13,7 @@ html {
 body {
    display: grid;
    grid-template-columns: [bodyStart] 1fr [bodyEnd];
-   grid-template-rows: [rowHeaderStart] 0.025fr [rowHeaderEnd row2Start] 1.85fr [row4End];
+   grid-template-rows: [rowHeaderStart] 0.025fr [rowHeaderEnd row2Start] 1.85fr [row4End] ;
 }
 
 header {
@@ -107,52 +107,20 @@ ul {
 
 /*content*/
 
-/*slideshow*/
 
-
-
-
-
-/* test later
- .slideList
- {
-    list-style-type: none;
-    grid-column: slideStart/slideEnd;
-    width:500%;
-    position:relative;
- }
-
- .slideListItem
- {
-    width:20%;
-    float:left;
- }
-
- .slideShow ul {animation: slideshow2 15s infinite alternate;}
-
- @keyframes slideshow2
- {
-    0% {left:0%;}
-    10% {left:0%;}
-    20% {left:-100%;}
-    30% {left:-100%;}
-    40% {left:-200%;}
-    50% {left:-200%;}
-    60% {left:-300%;}
-    70% {left:-300%;}
-    80% {left:-400%;}
-    90% {left:-400%;}
-    100% {left:-400%;}
- }
- */
 
 /*main*/
 
 main {
    display: grid;
-   grid-template-columns: [contLeft]0.2fr [contStart]0.6fr [contEnd] 0.2fr [contRight];
+   grid-template-columns: [contLeft]0.1fr [contStart]0.8fr [contEnd] 0.1fr [contRight];
    grid-row: auto;
    text-align: left;
+}
+
+.sectionCont1, .sectionCont2, .sectionCont3, .sectionCont4
+{
+grid-column:contStart/contEnd;
 }
 
 main h1 {
@@ -176,15 +144,31 @@ main .prev {
 }
 
 main p {
-   grid-column: contStart/contEnd;
    margin: 0;
    color: #404040;
    font-family: coranto-2, serif;
    font-weight: 400;
    font-style: normal;
+   text-align:center;
+}
+
+main b
+{
+   display:block;
+   text-align:Center;
+   font-size:2em;
+   margin:0 auto;
 }
 
 /* CONTENT BUBBLES */
+
+
+.containerImg img
+{
+   width: 70%;
+   
+}
+
 
 .contentBubbleContainer {
    display: grid;
@@ -256,7 +240,7 @@ main p {
    display: grid;
    grid-template-columns: [start1] .3fr [box1End] 0.3fr [box2End] 0.3fr [box3End];
    grid-template-rows: 1fr;
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
 }
 
@@ -266,14 +250,46 @@ main p {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 20px;
+   padding:0 20px;
    width: 100%;
-   height: 100%;
+   border-color: rgba(21, 6, 2, 0.08);
+   border-style: solid;
+   border-width: 2px;
+   border-radius:20px;
+   margin-top:2em;
+   margin-bottom:1em;      
+}
+
+.fb
+{
+   transition: 0.5s;
+
+}
+
+.facebook {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.fb:hover {
+   box-shadow: 2.5px 2.5px 4px 2px rgba(41, 42, 43, 0.2);
+   border-color: rgba(21, 6, 2, 0.00);
 }
 
 .rounded img {
-   width: 80%;
+   width: 90%;
 }
+
+/* sectcont */
+
+.containerImg
+{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
 
 
 @media only screen and (max-width: 767px) {
@@ -339,9 +355,14 @@ main p {
    main {
       display: grid;
       grid-template-columns: [contLeft]0.1fr [contStart]0.8fr [contEnd] 0.1fr [contRight];
-      grid-row: row3Start/row3End;
+      grid-row: auto;
       text-align: left;
    }
+
+   .sectionCont1, .sectionCont2, .sectionCont3, .sectionCont4
+{
+   grid-column:contStart/contEnd;
+}
 
    .contentBubbleContainer {
       display: grid;
@@ -365,12 +386,17 @@ main p {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: 3fr;
-      justify-content: center;
-      align-items: center;
+      gap:30px;
    }
-
    .rounded {
+      width:70%;
       margin: 0 auto 0 auto;
       align-self: center;
    }
+
+   .containerImg img
+{
+   width: 100%;
+   
+}
 }
